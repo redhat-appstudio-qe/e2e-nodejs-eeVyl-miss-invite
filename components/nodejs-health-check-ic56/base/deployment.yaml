@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: nodejs-health-check-ic56
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-xost-tenant/e2e-nodejs/nodejs-health-check-ic56@sha256:b17bee777a6fac988afa50c64e579c357081247f570f063fe8723733995d1d55
         name: my-nodejs
         ports:
         - containerPort: 3001
