@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-health-check-ic56
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-xost-tenant/e2e-nodejs/nodejs-health-check-ic56@sha256:b17bee777a6fac988afa50c64e579c357081247f570f063fe8723733995d1d55
+        name: my-nodejs
+        resources: {}
+status: {}
